@@ -1,0 +1,50 @@
+.sidepanel{
+    a{
+        font-size: 23px;
+        color: #000;
+        text-decoration: none;
+        &:hover{
+            
+                color: $main-color;
+            
+        }
+
+    }
+    position: fixed;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 3;
+    top:230px;
+    left:-10px;
+    align-items: center;
+    &__text{
+        span{
+            transform: rotate(-90deg)  translateX(-50px);
+            display: block;
+            width: 150px;
+            height: 25px;
+
+        }
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        height: 25px;
+        width: 150px;
+    }
+
+    /* &__link{
+        &:hover{
+            svg path{
+                fill: red;
+            }
+        }
+    } */
+    &__divider{
+        width: 2px;
+        height: 70px;
+        background-color: #000;
+    }
+}

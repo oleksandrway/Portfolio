@@ -1,0 +1,33 @@
+.title {
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 60px;
+    &_fs14{
+        font-size: 14px;
+        line-height: 1;
+    }
+    &_fs16{
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    &_fs48{
+        font-size: 48px;
+    }
+    &_fs36{
+        font-size: 36px;
+    }
+    &_fs20{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    &__section{
+        text-align: center;
+        @include before_circle;
+        &:before{
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        position: relative;
+    }
+}
+

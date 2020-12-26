@@ -1,0 +1,121 @@
+.contacts{
+    padding: 120px 0 90px 0 ;
+    &__subtitle{
+        position: relative;
+        @include before_circle;
+        margin-left: 12px;
+    
+    }
+
+    &__wrapper{
+        padding: 0 35px 0 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__img{
+        margin-right: 25px;
+        
+        img{
+            
+            object-fit: cover;
+        }
+
+    }
+    &__link{
+        color: #000;
+        font-size: 30px;
+        margin-right: 15px;
+        &:hover{
+            text-decoration: none;
+            color: $main-color;
+        }
+        
+
+    }
+
+    &__text, &__social{
+        margin-top: 15px;
+    }
+
+    &__form{
+        margin-top: 30px;
+        display: grid;
+        grid-template: 45px 190px 45px/ repeat(2, 280px);
+        
+        justify-content: space-between;
+        gap: 38px 25px;
+    }
+
+    &__input{
+        position: relative;
+        input{
+            width: 100%;
+            height: 100%;
+            padding-left: 20px;
+            font-weight: 500;
+            font-size: 12px;
+        }
+        label{
+            display: block;
+            position: absolute;
+            height: 18px;
+            padding: 0 8px;
+            background-color: #fff;
+            font-size: 12px;
+            margin-bottom: 0;
+            left: 6px;
+            top: -9px;
+            box-shadow: 0 4px 4px rgba(61, 33, 33, 0.3);
+
+            }
+            
+        }
+    
+
+    &__textarea{
+        grid-column: 1/3;
+        position: relative;
+        textarea{
+            width: 100%;
+            height: 100%;
+            font-weight: 800;
+            font-size: 12px;
+            line-height: 18px;
+            resize: none;
+            padding: 20px 20px 20px 0;
+        }
+        label{
+            display: block;
+            position: absolute;
+            height: 18px;
+            padding: 0 8px;
+            background-color: #fff;
+            font-size: 12px;
+            margin-bottom: 0;
+            left: 6px;
+            top: -9px;
+            box-shadow: 0 4px 4px rgba(61, 33, 33, 0.2);
+
+            }
+    }
+
+    &__btn{
+        border: none;
+    }
+    &__triggers{
+        grid-column: 1/3;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        column-gap: 35px;
+    }
+
+    &__policy{
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        input{
+            margin-right: 10px;
+        }
+    }
+}
